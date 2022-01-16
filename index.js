@@ -42,7 +42,7 @@ app.use(express.urlencoded({ limit: "5mb", extended: true }));
 app.use("/api/warriors", warriorsRoutes);
 
 app.use("/", (req, res, next) => {
-  return res.json("API UFC");
+  return res.json("Try/api/warriors");
 });
 
 app.use("*", (req, res, next) => {
